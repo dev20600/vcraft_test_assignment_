@@ -1,0 +1,21 @@
+<div class="row row2">
+  <!-- <p><%= todo_item.title %></p> -->
+  <% some_local_ = 125 %>
+  <% some_local_ = 1 if !todo_item.is_done.nil? && todo_item.is_done == true %>
+  <p><span <%  if some_local_ == 1%> class='task_ready'<% end %> ><%= todo_item.task_content %></span> | 
+
+  <%  if !todo_item.implement_before.nil? %>
+    <%=I18n.t("relase_date")%>: <strong><%= todo_item.implement_before.strftime('%d/%m/%Y') %></strong> | 
+  <% end %>
+
+  <%=I18n.t("priority")%>: <%= to_priority_string(todo_item.order_type).html_safe %> |
+  <% title_ = (some_local_==1 ? I18n.t("set_undone") : I18n.t("set_as_done") ) %>
+  
+  <% if !todo_item.todo_file.blank? %>
+  <%= link_to todo_item.todo_file, '/uploads/'+todo_item.todo_file %> | 
+  <% end %>
+
+  <%= link_to title_, complete_todo_project_todo_item_path(@todo_project, todo_item.id), method: :patch %> | 
+  <%= link_to I18n.t("modify"), edit_todo_project_todo_item_path(@todo_project, todo_item.id) %> | 
+  <%= link_to I18n.t("delete"), todo_project_todo_item_path(@todo_project, todo_item.id), method: :delete, data: { confirm: I18n.t("confirm") } %> </p>
+</div>

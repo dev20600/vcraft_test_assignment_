@@ -1,0 +1,67 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+ua:
+  hello: "hello світ"
+  signin: "Увійти"
+  signup: "Реєстрація"
+  crete_project: "Створити новий проект"
+  details: "Деталі і задачі проекту"
+  project_title: "Назва проекту"
+  project_description: "Опис"
+  modify: "Внести зміни"
+  projects_list: "Проекти до виконання"
+  project_create: "Новий проект"
+  project_start: "Створити проект"
+  project_page: "Сторінка проекту"
+  github: " Початковий Код"
+  simple_title: "Назва"
+  relase_date: "Кінцевий термін"
+  priority: "Пріоритет"
+  priority_low: "низький"
+  priority_normal: "звичайний"
+  priority_high: "високий"
+  file_upload: "Завантаження Файлу"
+  set_as_done: "Відмітити як Виконане"
+  set_undone: "Відмітити як невиконане"
+  save: "Зберегти зміни"
+  save_changes: "Зберегти оновлену інформацію"
+  add: "Додати нову задачу"
+  project_details: "Деталі проекту"
+  update_project: "Внесення змін в проект"
+  update_todo: "Внесення змін в задачу проекту"
+  title_todo_list: "Список задач ToDo:"
+  edit_project_details: "Внести зміни до проекту"
+  language: "Мова"
+  confirm: "Підтвердити"
+  delete: "Видалити"
+
+  back: "Назад"

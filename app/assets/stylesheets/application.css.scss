@@ -1,0 +1,137 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "bootstrap-datepicker";
+@import "bootstrap-select";
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+.mycellstyle {
+  padding-left: 20px;
+}
+
+.row2 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 176px;
+  margin: 20px 0;
+  border: 1px solid #6C7231;
+  //border-radius: 3px;
+}
+
+.select-wrapper:hover {
+  box-shadow: 0px 0px 3px gray;
+}
+
+.padng {
+  width: 176px;
+  height: 24px;
+  background: transparent;
+  border: 1px solid #6c7231;
+  padding: 0 10px 0 7px;
+}
+.select-wrapper select {
+  width: 176px;
+  height: 24px;
+  padding: 0 20px 0 7px;
+  background: transparent;
+  border: 0;
+  appearance: none;            /* remove arrow        */
+  -webkit-appearance: none;    /* remove arrow Chrome */
+  -moz-appearance: none;       /* remove arrow FF     */
+}
+
+
+.select-wrapper select::-ms-expand{
+    display: none;             /* remove arrow IE     */
+}
+
+.select-wrapper-select1 {
+  width: 176px;
+  height: 24px;
+  padding: 0 20px 0 7px;
+  background: transparent;
+  border: 1px solid #6C7231;
+  border-radius: 0px;
+  appearance: none;            /* remove arrow        */
+  -webkit-appearance: none;    /* remove arrow Chrome */
+  -moz-appearance: none;       /* remove arrow FF     */
+}
+.select-wrapper-select1::-ms-expand{
+    display: none;             /* remove arrow IE     */
+}
+
+
+
+.select-arrow-1 {
+  position: absolute;
+  z-index: -9999;
+  right: 4px;
+  bottom: 5px;
+  border: 8px solid;
+  border-color: white white #6C7231 white;
+  border-right: 0;
+}
+
+.colo1 {
+  color: #fbff00;
+  font-weight: bold;
+}
+
+.color2 {
+  color: #30b6ccd1;
+  font-weight: bold;
+}
+
+.task_ready {
+  color: #c5efd8;
+  //opacity: 0.94;
+  text-decoration: line-through;
+}
+.file_up {
+  display: none;
+}
+.custom-file-upload1{
+  border: 1px solid #6c7231;
+  display: inline-block; 
+  cursor: pointer;
+  padding: 1px 12px 0px 7px;
+  height: 24px;
+  font-weight: normal;
+}
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: -webkit-linear-gradient(40deg, #a6f4fd 10%, #d692d1 100%);
+  background:         linear-gradient(40deg, #a6f4fd 10%, #d692d1 100%);
+  background:      -o-linear-gradient(40deg, #a6f4fd 10%, #d692d1 100%);
+}
+
+.inpt {
+  background: transparent;
+  border: 1px solid #6c7231;
+}
+
+.lang {
+  height: 16px;
+}

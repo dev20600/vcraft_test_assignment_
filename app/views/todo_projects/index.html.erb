@@ -1,0 +1,46 @@
+<main>
+  <div class="container">
+    <div class="row colo1">
+      <p id="notice"><%= notice %></p>
+    </div>
+
+    <div class="row">
+      <h3><%=I18n.t("projects_list")%></h3>
+    </div>
+
+    <div class="row">
+      <table>
+        <thead>
+          <tr>
+            <th class="mycellstyle1"><%=I18n.t("simple_title")%></th>
+            <th class="mycellstyle"><%=I18n.t("project_description")%></th>
+            <th colspan="3"></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @todo_projects.each do |todo_project| %>
+            <tr>
+              <td class="mycellstyle1"><%= todo_project.title %></td>
+              
+              <td class="mycellstyle"><%= todo_project.description %></td>
+              
+              <td class="mycellstyle"><%= link_to I18n.t("details"), todo_project %></td>
+              
+              <td class="mycellstyle"><%= link_to I18n.t("modify"), edit_todo_project_path(todo_project) %></td>
+              
+              <td class="mycellstyle"><%= link_to todo_project, method: :delete, data: { confirm: I18n.t("confirm") } do %><i class="fas fa-trash-alt"></i><% end %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <%= link_to I18n.t("crete_project"), new_todo_project_path %>
+    </div>
+
+  </div>
+<main>

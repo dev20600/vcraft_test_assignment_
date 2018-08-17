@@ -1,0 +1,17 @@
+<main>
+  <div class="container">
+  	<div class="row">
+  		<h3><%=I18n.t("update_todo")%></h3>
+  	</div>
+
+	<div class="row">
+		<%= render 'form3', todo_item: @todo_item %>
+	</div>
+
+	<div class="row">
+
+		<%= link_to I18n.t("back"), @todo_related_project %>
+	
+	</div> 
+  </div>
+</main>

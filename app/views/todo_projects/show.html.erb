@@ -1,0 +1,45 @@
+<main>
+  <div class="container">
+	<div class="row colo1" >
+		<p id="notice"><%= notice %></p>
+	</div>
+
+  	<div class="row">
+		<h3><%=I18n.t("project_details")%></h3>
+	</div>
+
+	<div class="row">
+		<p>
+		  <strong><%=I18n.t("simple_title")%>:</strong>
+		  <%= @todo_project.title %>
+		</p>
+	</div>
+
+	<div class="row">
+	<p>
+	  <strong><%=I18n.t("project_description")%>:</strong>
+	  <%= @todo_project.description %>
+	</p>
+	</div>
+
+	<div class="row">
+		<div id="todo_items_wrapper">
+			<% if (@todo_project.todo_items.size > 0) %>
+				<p>
+
+					<strong><%=I18n.t("title_todo_list")%></strong>
+				</p>
+			<% end %>
+		 <%= render @todo_project.todo_items %>
+		 <div id="form">
+		  <%= render "todo_items/form" %>
+		 </div>
+		</div>
+	</div>
+	<div class="row">
+		<%= link_to I18n.t("edit_project_details"), edit_todo_project_path(@todo_project) %> |
+
+		<%= link_to I18n.t("back"), root_path %>
+	</div>
+  </div>
+</main>

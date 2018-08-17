@@ -1,0 +1,40 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- <a class="navbar-brand" href="#">Todo List Application</a> -->
+      <%= link_to 'Todo List Application', root_path, class: 'navbar-brand' %>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        <li><a href="#"><%= I18n.t("signin") %></a></li>
+        <li><a href="#"><%= I18n.t("signup") %></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= I18n.t("language") %> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <% I18n.available_locales.each do |lang| %>
+              <li><a href="?lang=<%= lang %>"><span>
+              <%= title_ = (lang.to_s == "en" ? "English" : "Ukrainian") %> </span> <img src="/<%= lang %>.png" class="lang"></img></a>
+              </li>
+            <% end %>
+
+          </ul>
+        </li>
+        <li><a href="https://github.com/dev20600/vcraft_test_assignment_/"><i class="fab fa-github"></i> <%= I18n.t("github") %></a></li>
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

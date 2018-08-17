@@ -1,0 +1,67 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  hello: "Hello world"
+  signin: "Sign In"
+  signup: "Sign Up"
+  crete_project: "Create New Project"
+  details: "Project details and tasks"
+  project_title: "Project Title"
+  project_description: "Description"
+  modify: "Modify"
+  projects_list: "Todo Projects"
+  project_create: "New Project"
+  project_start: "Start New Project"
+  project_page: "Project page"
+  github: " Source Code"
+  simple_title: "Title"
+  relase_date: "Release Date"
+  priority: "Priority"
+  priority_low: "Low"
+  priority_normal: "Normal"
+  priority_high: "High"
+  file_upload: "File Upload"
+  set_as_done: "Set as Done"
+  set_undone: "Set as Undone"
+  save: "Save Modifications"
+  save_changes: "Save Changes"
+  add: "Add new todo item"
+  project_details: "Project Details"
+  update_project: "Updating Project"
+  update_todo: "Updating Todo Item"
+  title_todo_list: "ToDo List:"
+  edit_project_details: "Edit Project Details"
+  language: "Language"
+  confirm: "Are you sure?"
+  delete: "Remove"
+
+  back: "Back"

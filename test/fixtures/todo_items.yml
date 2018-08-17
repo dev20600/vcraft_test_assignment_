@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  task_content: MyString
+  is_done: false
+  implement_before: 2018-08-15
+  order_type: 
+  todo_project: one
+
+two:
+  task_content: MyString
+  is_done: false
+  implement_before: 2018-08-15
+  order_type: 
+  todo_project: two

@@ -1,0 +1,14 @@
+
+<main>
+  <div class="container">
+  	<div class="row">
+		<h3><%=I18n.t("project_create")%></h3>
+	</div>
+    <div class="row">
+		<%= render 'form', todo_project: @todo_project %>
+
+
+		<%= link_to I18n.t("back"), root_path %>
+	</div>
+  </div>
+</main>

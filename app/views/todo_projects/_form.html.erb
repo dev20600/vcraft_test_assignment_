@@ -1,0 +1,39 @@
+<%= form_with(model: todo_project, local: true, class: :custom_class1) do |form| %>
+  <% if todo_project.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(todo_project.errors.count, "error") %> prohibited this todo_project from being saved:</h2>
+
+      <ul>
+      <% todo_project.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row row2">
+    <div>
+      <%= form.label I18n.t("simple_title") %>
+    </div>
+    <div>
+      <%= form.text_field :title, class: :inpt %>
+    </div>
+
+    
+  </div>
+
+  <div class="row row2">
+    <div>
+      <%= form.label I18n.t("project_description") %>
+    </div>
+    <div>
+      <%= form.text_area :description, class: :inpt %>
+    </div>
+    
+    
+  </div>
+
+  <div class="row row2">
+    <%= form.submit I18n.t("project_start") %>
+  </div>
+<% end %>
